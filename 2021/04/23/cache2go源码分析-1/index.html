@@ -25,22 +25,20 @@
  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree cache2go</span><br></pre></td></tr></table></figure>
 
 <p> <img src="https://images-1255839170.cos.ap-shanghai.myqcloud.com/img2021-04-23%2003-00-50%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png"></p>
-<p> benchmark_test.go、benchmark_test.go 是测试文件</p>
-<p> examples 目录下的是3个例子</p>
-<p> LICENSE.txt 文件是开源许可证</p>
-<p> errors.go 文件包含一些错误信息</p>
-<p> cache.go、cacheitem.go、cachetable.go 三个文件为核心文件</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">benchmark_test.go、benchmark_test.go 是测试文件</span><br><span class="line"></span><br><span class="line">examples 目录下的是3个例子</span><br><span class="line"></span><br><span class="line">LICENSE.txt 文件是开源许可证</span><br><span class="line"></span><br><span class="line">errors.go 文件包含一些错误信息</span><br><span class="line"></span><br><span class="line">cache.go、cacheitem.go、cachetable.go 三个文件为核心文件</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
+<p>​    </p>
 <ol start="4">
 <li><p>cache2go 可视化分析</p>
  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go-callvis -group pkg,type -focus=&quot;&quot; -limit github.com/muesli/cache2go -format png -file cache2go examples/mycachedapp/mycachedapp.go</span><br></pre></td></tr></table></figure>
 
 <p> <img src="https://images-1255839170.cos.ap-shanghai.myqcloud.com/imgcache2go.png"></p>
+<p> 详细关系<br> <img src="https://images-1255839170.cos.ap-shanghai.myqcloud.com/img2021-04-23%2015-25-07%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png"></p>
 </li>
 </ol>
-<pre><code>详细关系
-![](https://images-1255839170.cos.ap-shanghai.myqcloud.com/img2021-04-23%2015-25-07%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)</code></pre>
+<p>​    </p>
 </div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-04-23</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://yoursite.com/2021/04/23/cache2go源码分析-1/,纯狐小仙,cache2go源码分析(1),;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2021/04/23/cache2go%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-2/" title="cache2go源码分析(2)">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/08/18/hello-world/" title="Hello World">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
   el:'#vcomments',
   notify:false || false, 
